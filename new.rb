@@ -24,6 +24,11 @@ class Car
   def self.run(distance)
     puts "車で#{distance}キロ走ります。"
   end
+  def self.turn(direction)
+    puts "#{direction}に曲がります。"
+  end
 end
-
+# 最初にclass指定されてたからまとめてできると思ってやってみたらできた。
+# 解答の方ではclass Carを入力していたけれどまとめられることがわかった。
 Car.run(10)
+Car.turn("右")
